@@ -1,0 +1,57 @@
+.jumbotron {
+  padding-top: 6rem;
+  background-color: #e2edff;
+}
+
+#pengajar {
+  background-color: #e2edff;
+}
+
+#lokasi {
+  background-color: #e2edff;
+}
+
+#end {
+  background-color: #0d6efd;
+}
+
+.pertama {
+  color: #0062ff;
+}
+
+.kedua {
+  color: #00b909;
+}
+
+.akhir {
+  background-color: #002d70;
+}
+
+section {
+  padding-top: 5rem;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #0062ff;
+  color: #fff;
+  border: 3px solid #0062ff;
+}
+
+.nav-tabs .nav-link {
+  background-color: #fff;
+  color: #0062ff;
+  border: 3px solid #0062ff;
+}
+
+.nav-tabs .nav-link:hover {
+  border: 3px solid #0062ff;
+}
+
+.nav-tabs {
+  border-bottom: 1px solid #0062ff;
+}
+
+.tab-content {
+  border: 1px solid #0062ff;
+  padding: 20px;
+}
