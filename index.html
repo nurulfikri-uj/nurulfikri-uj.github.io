@@ -45,9 +45,20 @@
           <li class="nav-item">
             <a class="nav-link" href="#sekolah">Sekolah</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#end">Hasil TO</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Hasil TO
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-start" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#end">Siswa</a></li>
+              <li><a class="dropdown-item" href="yasporbi.html">Sekolah SMAS Yasporbi Jakarta</a></li>
+              <li><a class="dropdown-item" href="sman18.html">Sekolah SMAN 18 Jakarta</a></li>
+              <li><a class="dropdown-item" href="sman73.html">Sekolah SMAN 73 Jakarta</a></li>
+            </ul>
           </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#end">Hasil TO</a>
+          </li> -->
         </ul>
       </div>
     </div>
@@ -365,8 +376,8 @@
   </div>
   <div class="d-grid gap-2 col-sm-5 mx-auto">
     <a class="btn btn-danger btn-lg" href="https://psb.nurulfikri.co/" role="button">Pendaftaran Online</a>
-    <a class="btn btn-primary btn-lg" href="img/brosur.png" download="brosur NF semester 2 TA 2022">Download Brosur Program Intensif UTBK SBMPTN</a>
-    <a class="btn btn-warning btn-lg" href="img/brosur30.png" download="brosur NF semester 2 TA 2022">Download Brosur Promo 30%</a>
+    <a class="btn btn-primary btn-lg" href="img/brosur.png" download="brosur Intensif NF TA 2022">Download Brosur Program Intensif UTBK SBMPTN</a>
+    <a class="btn btn-warning btn-lg" href="img/brosur30.png" download="brosur NF 30% TA 2022">Download Brosur Promo 30%</a>
   </div>
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
     <path
@@ -408,7 +419,7 @@
         <form name="nurul-fikri-utara-jakarta">
           <div class="mb-3">
             <select class="form-select" aria-label="Default select example" name="sekolah">
-              <option selected>Sekolah</option>
+              <option selected>Pilih sekolah..</option>
               <!-- <option value="SMAS Yasporbi Jakarta">SMA Contoh</option> -->
               <option value="SMAS Yasporbi Jakarta">SMAS Yasporbi Jakarta</option>
               <option value="SMAN 73 Jakarta">SMAN 73 Jakarta</option>
@@ -417,7 +428,7 @@
           </div>
           <div class="mb-3">
             <select class="form-select" aria-label="Default select example" name="kelompok">
-              <option selected>Kelompok Ujian</option>
+              <option selected>Pilih kelompok ujian..</option>
               <option value="SAINTEK">SAINTEK</option>
               <option value="SOSHUM">SOSHUM</option>
             </select>
