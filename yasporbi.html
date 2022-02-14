@@ -33,7 +33,10 @@
               <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
               Loading...
             </button>
-            <a class="btn btn-primary btn-download d-none" href="data/TO YASPORBI.xlsx" download="rekap to yasporbi" role="button">Download</a>
+            <a class="btn btn-primary btn-download1 d-none" href="data/YASPORBI/YASPORBI TO 1 SM 1 TA 2022.zip" download="yasporbi to 1 sm 1 ta 2022" role="button">Download TO 1 SM 1</a>
+            <a class="btn btn-danger btn-download2 d-none mt-3" href="data/YASPORBI/YASPORBI TO 2 SM 1 TA 2022.zip" download="yasporbi to 2 sm 1 ta 2022" role="button">Download TO 2 SM 1</a>
+            <a class="btn btn-warning btn-download3 d-none mt-3" href="data/YASPORBI/YASPORBI TO 1 SM 2 TA 2022.zip" download="yasporbi to 1 sm 2 ta 2022" role="button">Download TO 1 SM 2</a>
+            <a class="btn btn-success btn-download4 d-none mt-3" href="data/YASPORBI/YASPORBI TO 2 SM 2 TA 2022.zip" download="yasporbi to 2 sm 2 ta 2022" role="button">Download TO 2 SM 2</a>
           </form>
         </div>
       </div>
@@ -44,7 +47,10 @@
       const form = document.forms["login-yasporbi"];
       const btnKirim = document.querySelector(".btn-kirim");
       const btnLoading = document.querySelector(".btn-loading");
-      const btnDownload = document.querySelector(".btn-download");
+      const btnDownload1 = document.querySelector(".btn-download1");
+      const btnDownload2 = document.querySelector(".btn-download2");
+      const btnDownload3 = document.querySelector(".btn-download3");
+      const btnDownload4 = document.querySelector(".btn-download4");
       // const myAlert = document.querySelector(".my-alert");
 
       form.addEventListener("submit", (e) => {
@@ -55,9 +61,12 @@
         btnKirim.classList.toggle("d-none");
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
           .then((response) => {
-            // tampilkan tombol kirim, hilangkan tombol loading
+            // tampilkan tombol download, hilangkan tombol loading
             btnLoading.classList.toggle("d-none");
-            btnDownload.classList.toggle("d-none");
+            btnDownload1.classList.toggle("d-none");
+            btnDownload2.classList.toggle("d-none");
+            btnDownload3.classList.toggle("d-none");
+            btnDownload4.classList.toggle("d-none");
             // tampilkan alert
             // myAlert.classList.toggle("d-none");
             // reset form
