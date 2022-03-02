@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Kuisioner | Belajar itu Selezat Cokelat</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">BIP Nurul Fikri</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html#home">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#tentang">Tentang</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#mentor">Mentor</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#kuisioner">Kuisioner</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Tools
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="index.html#snmptn">SNMPTN</a></li>
+                <li><a class="dropdown-item" href="index.html#sbmptn">SBMPTN</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="index.html#berita">Berita</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <!-- Biodata -->
+    <section id="biodata">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2>Biodata</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <form name="belajar-selezat-cokelat">
+              <div class="mb-3">
+                <label for="name" class="form-label"></label>
+                <input type="text" class="form-control" placeholder="Nama Lengkap" id="name" aria-describedby="name" name="nama" required />
+              </div>
+              <div class="mb-3">
+                <label for="nomor" class="form-label"></label>
+                <input type="text" maxlength="12" class="form-control" placeholder="Nomor NF [xxx-xx-xxxxx]" id="nomor" aria-describedby="nomor" name="nomor" required />
+              </div>
+              <div class="mb-3">
+                <label for="class" class="form-label"></label>
+                <input type="text" maxlength="2" class="form-control" placeholder="Kelas [misal: P1]" id="class" aria-describedby="class" name="kelas" required />
+              </div>
+              <div class="mb-3">
+                <label for="location" class="form-label"></label>
+                <input type="text" maxlength="3" class="form-control" placeholder="Kode Lokasi [misal: 102]" id="location" aria-describedby="location" name="lokasi" required />
+              </div>
+            </div>
+          </div>
+          <!-- Akhir Biodata -->
+
+    <!-- Kuisioner -->
+    <div class="row">
+      <div class="col">
+              <h2 class="text-center">Kuisioner : Belajar itu Selezat Cokelat</h2>
+              <div class="mb-3">
+                <p>1. Saya baru akan belajar dirumah jika akan ulangan dan mengerjakan PR</p>
+                <div class="form-check form-check-inline" >
+                  <input class="form-check-input" type="radio" name="1" id="inlineRadio1" value="0" required/>
+                  <label class="form-check-label" for="inlineRadio1">Ya</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="1" id="inlineRadio2" value="1" />
+                  <label class="form-check-label" for="inlineRadio2">Tidak</label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>2. Saya selalu bersemangat jika akan berangkat ke sekolah</p>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="2" id="inlineRadio1" value="1" required />
+                  <label class="form-check-label" for="inlineRadio1">Ya</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="2" id="inlineRadio2" value="0" />
+                  <label class="form-check-label" for="inlineRadio2">Tidak</label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>3. Saya kurang antusias dengan pelajaran yang gurunya membosankan dalam mengajar</p>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="3" id="inlineRadio1" value="0" required />
+                  <label class="form-check-label" for="inlineRadio1">Ya</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="3" id="inlineRadio2" value="1" />
+                  <label class="form-check-label" for="inlineRadio2">Tidak</label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>4. Saya selalu antusias dan berusaha mencoba dengan semua mata pelajaran</p>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="4" id="inlineRadio1" value="1" required />
+                  <label class="form-check-label" for="inlineRadio1">Ya</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="4" id="inlineRadio2" value="0" />
+                  <label class="form-check-label" for="inlineRadio2">Tidak</label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>5. Saya merasa tenang jika teman-teman mendapatkan nilai rendah sama seperti nilai yang saya peroleh</p>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="5" id="inlineRadio1" value="0" required />
+                  <label class="form-check-label" for="inlineRadio1">Ya</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="5" id="inlineRadio2" value="1" />
+                  <label class="form-check-label" for="inlineRadio2">Tidak</label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>6. Saya selalu mencoba latihan soal-soal yang menantang walau tidak disuruh</p>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="6" id="inlineRadio1" value="1" required />
+                  <label class="form-check-label" for="inlineRadio1">Ya</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="6" id="inlineRadio2" value="0" />
+                  <label class="form-check-label" for="inlineRadio2">Tidak</label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>7. Saya selalu pusing dan bosan melihat buku-buku pelajaran terutama pelajaran eksak</p>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="7" id="inlineRadio1" value="0" required />
+                  <label class="form-check-label" for="inlineRadio1">Ya</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="7" id="inlineRadio2" value="1" />
+                  <label class="form-check-label" for="inlineRadio2">Tidak</label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>8. Saya sudah membuat/ memiliki jadwal khusus untuk belajar setiap malam</p>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="8" id="inlineRadio1" value="1" required />
+                  <label class="form-check-label" for="inlineRadio1">Ya</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="8" id="inlineRadio2" value="0" />
+                  <label class="form-check-label" for="inlineRadio2">Tidak</label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>9. Saya selalu menunda-nunda untuk mulai belajar sampai akhirnya tidak jadi belajar</p>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="9" id="inlineRadio1" value="0" required />
+                  <label class="form-check-label" for="inlineRadio1">Ya</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="9" id="inlineRadio2" value="1" />
+                  <label class="form-check-label" for="inlineRadio2">Tidak</label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>10. Saya selalu bersemangat belajar karena saya tahu manfaatnya untuk diri saya dimasa depan</p>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="10" id="inlineRadio1" value="1" required />
+                  <label class="form-check-label" for="inlineRadio1">Ya</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="10" id="inlineRadio2" value="0" />
+                  <label class="form-check-label" for="inlineRadio2">Tidak</label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>11. Saya senang jika guru tidak hadir</p>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="11" id="inlineRadio1" value="0" required />
+                  <label class="form-check-label" for="inlineRadio1">Ya</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="11" id="inlineRadio2" value="1" />
+                  <label class="form-check-label" for="inlineRadio2">Tidak</label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>12. Saya senang jika berkumpul dengan teman-teman untuk diskusi pelajaran</p>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="12" id="inlineRadio1" value="1" required />
+                  <label class="form-check-label" for="inlineRadio1">Ya</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="12" id="inlineRadio2" value="0" />
+                  <label class="form-check-label" for="inlineRadio2">Tidak</label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>13. Saya selalu membicarakan guru “killer” yang membosankan dalam mengajar dengan teman-teman</p>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="13" id="inlineRadio1" value="0" required />
+                  <label class="form-check-label" for="inlineRadio1">Ya</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="13" id="inlineRadio2" value="1" />
+                  <label class="form-check-label" for="inlineRadio2">Tidak</label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>14. Saya sering membantu teman yang kesulitan dalam mata pelajaran tertentu</p>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="14" id="inlineRadio1" value="1" required />
+                  <label class="form-check-label" for="inlineRadio1">Ya</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="14" id="inlineRadio2" value="0" />
+                  <label class="form-check-label" for="inlineRadio2">Tidak</label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>15. Nilai saya selalu jelek jika diajar oleh guru “killer” yang kurang enak dalam mengajar</p>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="15" id="inlineRadio1" value="0" required />
+                  <label class="form-check-label" for="inlineRadio1">Ya</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="15" id="inlineRadio2" value="1" />
+                  <label class="form-check-label" for="inlineRadio2">Tidak</label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>16. Saya sering mendapat nilai bagus dimata pelajaran yang dianggap teman-teman gurunya “killer”</p>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="16" id="inlineRadio1" value="1" required />
+                  <label class="form-check-label" for="inlineRadio1">Ya</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="16" id="inlineRadio2" value="0" />
+                  <label class="form-check-label" for="inlineRadio2">Tidak</label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>17. Saya takut jika guru mengadakan ulangan dadakan</p>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="17" id="inlineRadio1" value="0" required />
+                  <label class="form-check-label" for="inlineRadio1">Ya</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="17" id="inlineRadio2" value="1" />
+                  <label class="form-check-label" for="inlineRadio2">Tidak</label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>18. Saya sering diandalkan oleh teman-teman untuk menjelaskan ulang pelajaran yang telah di ajarkan oleh guru</p>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="18" id="inlineRadio1" value="1" required />
+                  <label class="form-check-label" for="inlineRadio1">Ya</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="18" id="inlineRadio2" value="0" />
+                  <label class="form-check-label" for="inlineRadio2">Tidak</label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>19. Saya lebih sering mengerjakan PR di sekolah saat akan masuk kelas dengan melihat pekerjaan teman.</p>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="19" id="inlineRadio1" value="0" required />
+                  <label class="form-check-label" for="inlineRadio1">Ya</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="19" id="inlineRadio2" value="1" />
+                  <label class="form-check-label" for="inlineRadio2">Tidak</label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>20. Saya sering menghabiskan waktu dengan belajar atau membaca</p>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="20" id="inlineRadio1" value="1" required />
+                  <label class="form-check-label" for="inlineRadio1">Ya</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="20" id="inlineRadio2" value="0" />
+                  <label class="form-check-label" for="inlineRadio2">Tidak</label>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
+              <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
+              <a class="btn btn-success btn-download d-none" href="https://docs.google.com/spreadsheets/d/1mGqLvNjT4-ExWephr_zVEpoJp10172F6Nryhdlhypc8/export?Format=pdf&format=pdf&size=7&portrait=true&gid=431117142&gridlines=false" role="button">Download</a>
+            </div>
+            </div>
+            </form>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Kuisioner -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbzJRjrMjRoFE4656AtKH5XbZ7s_9nfqFCG7gCPPnKUovd_d6XkETIGL7fXFs3ElnpaU/exec"
+      const form = document.forms['belajar-selezat-cokelat'];
+      const btnKirim = document.querySelector(".btn-kirim");
+      const btnLoading = document.querySelector(".btn-loading");
+      const btnDownload = document.querySelector(".btn-download");
+      // const myAlert = document.querySelector(".my-alert");
+    
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        // ketika tombol submit diklik
+        // tampilkan tombol loading, hilangkan tombol kirim
+        btnLoading.classList.toggle("d-none");
+        btnKirim.classList.toggle("d-none");
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then ((response) => {
+            // tampilkan tombol kirim, hilangkan tombol loading
+            btnLoading.classList.toggle("d-none");
+            btnDownload.classList.toggle("d-none");
+            // tampilkan alert
+            // myAlert.classList.toggle("d-none");
+            // reset form
+            form.reset();
+             console.log('Success!', response);
+            })
+          .catch((error) => console.error('Error!', error.message));
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Kuisioner | Teknik Menghadapi Ujian</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">BIP Nurul Fikri</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html#home">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#tentang">Tentang</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#mentor">Mentor</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#kuisioner">Kuisioner</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Tools
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="index.html#snmptn">SNMPTN</a></li>
+                <li><a class="dropdown-item" href="index.html#sbmptn">SBMPTN</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="index.html#berita">Berita</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <!-- Biodata -->
+    <section id="biodata">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h2>Biodata</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <form name="teknik-menghadapi-ujian">
+              <div class="mb-3">
+                <label for="name" class="form-label"></label>
+                <input type="text" class="form-control" placeholder="Nama Lengkap" id="name" aria-describedby="name" name="nama" required />
+              </div>
+              <div class="mb-3">
+                <label for="nomor" class="form-label"></label>
+                <input type="text" maxlength="12" class="form-control" placeholder="Nomor NF [xxx-xx-xxxxx]" id="nomor" aria-describedby="nomor" name="nomor" required />
+              </div>
+              <div class="mb-3">
+                <label for="class" class="form-label"></label>
+                <input type="text" maxlength="2" class="form-control" placeholder="Kelas [misal: P1]" id="class" aria-describedby="class" name="kelas" required />
+              </div>
+              <div class="mb-3">
+                <label for="location" class="form-label"></label>
+                <input type="text" maxlength="3" class="form-control" placeholder="Kode Lokasi [misal: 102]" id="location" aria-describedby="location" name="lokasi" required />
+              </div>
+            </div>
+          </div>
+    <!-- Akhir Biodata -->
+
+    <!-- Kuisioner -->
+    <div class="row">
+      <div class="col">
+              <h2 class="text-center">Kuisioner : Simtom Stres</h2>
+              <div class="mb-3">
+                <p>1. Apakah Anda merasa berperilaku tidak seperti diri Anda sesungguhnya?</p>
+                <div class="form-check form-check-inline" >
+                  <input class="form-check-input" type="radio" name="1" id="inlineRadio1" value="1" required/>
+                  <label class="form-check-label" for="inlineRadio1">Ya</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="1" id="inlineRadio2" value="0" />
+                  <label class="form-check-label" for="inlineRadio2">Tidak</label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>2. Apakah suasana hati Anda menjadi negatif, penuh kemarahan, putus asa dan cemas?</p>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="2" id="inlineRadio1" value="1" required />
+                  <label class="form-check-label" for="inlineRadio1">Ya</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="2" id="inlineRadio2" value="0" />
+                  <label class="form-check-label" for="inlineRadio2">Tidak</label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>3. Apakah Anda mengalami gangguan untuk tidur?</p>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="3" id="inlineRadio1" value="1" required />
+                  <label class="form-check-label" for="inlineRadio1">Ya</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="3" id="inlineRadio2" value="0" />
+                  <label class="form-check-label" for="inlineRadio2">Tidak</label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>4. Apakah Anda merasa sangat sensitif, mudah marah dan emosional? </p>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="4" id="inlineRadio1" value="1" required />
+                  <label class="form-check-label" for="inlineRadio1">Ya</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="4" id="inlineRadio2" value="0" />
+                  <label class="form-check-label" for="inlineRadio2">Tidak</label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>5. Apakah Anda banyak membuat kesalahan dalam pekerjaan Anda sehari-hari?</p>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="5" id="inlineRadio1" value="1" required />
+                  <label class="form-check-label" for="inlineRadio1">Ya</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="5" id="inlineRadio2" value="0" />
+                  <label class="form-check-label" for="inlineRadio2">Tidak</label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>6. Apakah Anda banyak membuat keputusan yang tidak efektif?</p>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="6" id="inlineRadio1" value="1" required />
+                  <label class="form-check-label" for="inlineRadio1">Ya</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="6" id="inlineRadio2" value="0" />
+                  <label class="form-check-label" for="inlineRadio2">Tidak</label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>7. Apakah Anda kehilangan minat terhadap aktivitas yang selama ini Anda sukai misalnya bermain musik, mendengar lagi, bermain bola, mengunjungi teman dll?</p>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="7" id="inlineRadio1" value="1" required />
+                  <label class="form-check-label" for="inlineRadio1">Ya</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="7" id="inlineRadio2" value="0" />
+                  <label class="form-check-label" for="inlineRadio2">Tidak</label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>8. Apakah Anda menggunakan alkohol atau obat-obatan lain (pereda stres)?</p>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="8" id="inlineRadio1" value="1" required />
+                  <label class="form-check-label" for="inlineRadio1">Ya</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="8" id="inlineRadio2" value="0" />
+                  <label class="form-check-label" for="inlineRadio2">Tidak</label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>9. Apakah Anda merasa energi dan kegairahan Anda belajar telah habis?</p>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="9" id="inlineRadio1" value="1" required />
+                  <label class="form-check-label" for="inlineRadio1">Ya</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="9" id="inlineRadio2" value="0" />
+                  <label class="form-check-label" for="inlineRadio2">Tidak</label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>10. Apakah Anda mengalami penurunan dan peningkatan nafsu makan yang berlebihan?</p>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="10" id="inlineRadio1" value="1" required />
+                  <label class="form-check-label" for="inlineRadio1">Ya</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="10" id="inlineRadio2" value="0" />
+                  <label class="form-check-label" for="inlineRadio2">Tidak</label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>11. Apakah Anda merasa cemas, bosan, lelah, jenuh setiap saat?</p>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="11" id="inlineRadio1" value="1" required />
+                  <label class="form-check-label" for="inlineRadio1">Ya</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="11" id="inlineRadio2" value="0" />
+                  <label class="form-check-label" for="inlineRadio2">Tidak</label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>12. Apakah Anda mengalami sakit kepala, tengkuk terasa kaku, mulut kering, perut terasa sakit, dada terasa sesak, badan terasa panas, jantung berdebar-debar?  </p>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="12" id="inlineRadio1" value="1" required />
+                  <label class="form-check-label" for="inlineRadio1">Ya</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="12" id="inlineRadio2" value="0" />
+                  <label class="form-check-label" for="inlineRadio2">Tidak</label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>13. Apakah Anda merasa kehilangan semangat untuk belajar?</p>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="13" id="inlineRadio1" value="1" required />
+                  <label class="form-check-label" for="inlineRadio1">Ya</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="13" id="inlineRadio2" value="0" />
+                  <label class="form-check-label" for="inlineRadio2">Tidak</label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>14. Apakah perasaan Anda dipenuhi dengan keresahan, kebencian dan kesedihan?</p>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="14" id="inlineRadio1" value="1" required />
+                  <label class="form-check-label" for="inlineRadio1">Ya</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="14" id="inlineRadio2" value="0" />
+                  <label class="form-check-label" for="inlineRadio2">Tidak</label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <p>15. Apakah Anda merasa sulit untuk konsentrasi dalam belajar?</p>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="15" id="inlineRadio1" value="1" required />
+                  <label class="form-check-label" for="inlineRadio1">Ya</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="15" id="inlineRadio2" value="0" />
+                  <label class="form-check-label" for="inlineRadio2">Tidak</label>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
+              <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
+              <a class="btn btn-success btn-download d-none" href="https://docs.google.com/spreadsheets/d/1l7T9WyCOk02htoaMq-nEdm7Lzz61lpU_rccXw-sVri0/export?Format=pdf&format=pdf&size=7&portrait=true&gid=1282291324&gridlines=false" role="button">Download</a>
+            </div>
+            </div>
+            </form>
+            </div>
+          </div>
+    </section>
+    
+
+    <!-- Akhir Kuisioner -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbwwSkRWDQtR3e0aQyXkhZNZmA7okLOxqQ16ZxW6kSLEHBd52kQS9pwRy5bPYMMhH32PyA/exec"
+      const form = document.forms['teknik-menghadapi-ujian'];
+      const btnKirim = document.querySelector(".btn-kirim");
+      const btnLoading = document.querySelector(".btn-loading");
+      const btnDownload = document.querySelector(".btn-download");
+      // const myAlert = document.querySelector(".my-alert");
+    
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        // ketika tombol submit diklik
+        // tampilkan tombol loading, hilangkan tombol kirim
+        btnLoading.classList.toggle("d-none");
+        btnKirim.classList.toggle("d-none");
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then ((response) => {
+            // tampilkan tombol kirim, hilangkan tombol loading
+            btnLoading.classList.toggle("d-none");
+            btnDownload.classList.toggle("d-none");
+            // tampilkan alert
+            // myAlert.classList.toggle("d-none");
+            // reset form
+            form.reset();
+             console.log('Success!', response);
+            })
+          .catch((error) => console.error('Error!', error.message));
+      });
+    </script>
+  </body>
+</html>
