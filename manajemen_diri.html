@@ -37,6 +37,10 @@
       <div class="container">
         <div class="row">
           <div class="col">
+            <div class="alert alert-warning alert-dismissible fade show d-none my-alert" role="alert">
+              <strong>Silahkan klik <a href="manajemen_diri_dwnld.html"><b>Link Download!</b></a> </strong>
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
             <h2>Biodata</h2>
           </div>
         </div>
@@ -336,7 +340,7 @@
                 <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                 Loading...
               </button>
-              <a class="btn btn-success btn-download d-none" href="https://docs.google.com/spreadsheets/d/1ngvPGWcRTFdXMSzRr8fwehQqQ7kIe5cuvGMcGyK-MNw/export?Format=pdf&format=pdf&size=7&portrait=true&gid=959749771&gridlines=false" role="button">Download</a>
+              <a class="btn btn-success btn-download d-none" href="manajemen_diri_dwnld.html" role="button">Link Download</a>
             </div>
             </div>
             </form>
@@ -347,12 +351,12 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script>
-      const scriptURL = "https://script.google.com/macros/s/AKfycbyw7vs4Yta_KpdJMtmsmcZfuC4N1vd5YHlCBwr9DaJWVyNrveObyyKs06y4oqBZvx-d/exec"
+      const scriptURL = "https://script.google.com/macros/s/AKfycbyw7vs4Yta_KpdJMtmsmcZfuC4N1vd5YHlCBwr9DaJWVyNrveObyyKs06y4oqBZvx-d/exec";
       const form = document.forms['manajemen-diri'];
       const btnKirim = document.querySelector(".btn-kirim");
       const btnLoading = document.querySelector(".btn-loading");
       const btnDownload = document.querySelector(".btn-download");
-      // const myAlert = document.querySelector(".my-alert");
+      const myAlert = document.querySelector(".my-alert");
     
       form.addEventListener('submit', (e) => {
         e.preventDefault();
@@ -366,7 +370,7 @@
             btnLoading.classList.toggle("d-none");
             btnDownload.classList.toggle("d-none");
             // tampilkan alert
-            // myAlert.classList.toggle("d-none");
+            myAlert.classList.toggle("d-none");
             // reset form
             form.reset();
              console.log('Success!', response);

@@ -37,6 +37,10 @@
       <div class="container">
         <div class="row">
           <div class="col">
+            <div class="alert alert-warning alert-dismissible fade show d-none my-alert" role="alert">
+              <strong>Silahkan klik <a href="belajar_itu_selezat_cokelat_dwnld.html"><b>Link Download!</b></a> </strong>
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
             <h2>Biodata</h2>
           </div>
         </div>
@@ -292,7 +296,7 @@
                 <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                 Loading...
               </button>
-              <a class="btn btn-success btn-download d-none" href="https://docs.google.com/spreadsheets/d/1mGqLvNjT4-ExWephr_zVEpoJp10172F6Nryhdlhypc8/export?Format=pdf&format=pdf&size=7&portrait=true&gid=431117142&gridlines=false" role="button">Download</a>
+              <a class="btn btn-success btn-download d-none" href="belajar_itu_selezat_cokelat.html" role="button">Link Download</a>
             </div>
             </div>
             </form>
@@ -308,7 +312,7 @@
       const btnKirim = document.querySelector(".btn-kirim");
       const btnLoading = document.querySelector(".btn-loading");
       const btnDownload = document.querySelector(".btn-download");
-      // const myAlert = document.querySelector(".my-alert");
+      const myAlert = document.querySelector(".my-alert");
     
       form.addEventListener('submit', (e) => {
         e.preventDefault();
@@ -322,7 +326,7 @@
             btnLoading.classList.toggle("d-none");
             btnDownload.classList.toggle("d-none");
             // tampilkan alert
-            // myAlert.classList.toggle("d-none");
+            myAlert.classList.toggle("d-none");
             // reset form
             form.reset();
              console.log('Success!', response);

@@ -37,6 +37,12 @@
       <div class="container">
         <div class="row">
           <div class="col">
+            <div class="alert alert-warning alert-dismissible fade show d-none my-alert" role="alert">
+              <strong
+                >Silahkan klik <a href="melesat_diusia_muda_dwnld.html"><b>Link Download!</b></a>
+              </strong>
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
             <h2>Biodata</h2>
           </div>
         </div>
@@ -66,7 +72,7 @@
     <!-- Kuisioner -->
     <div class="row">
       <div class="col">
-      <h2 class="text-center">Kuisioner : Melesat diusia Muda</h2>
+      <h2 class="text-center">Kuisioner : Melesat Diusia Muda</h2>
       <div class="mb-3">
         <p>1. Ketika ada waktu luang saya mengisinya dengan menyalurkan hobi</p>
         <div class="form-check form-check-inline" >
@@ -292,7 +298,7 @@
         <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
         Loading...
       </button>
-      <a class="btn btn-success btn-download d-none" href="https://docs.google.com/spreadsheets/d/1cbfM5OgcfvWh0I5ATXatyXucdm7C9UC5pvpBFJtLvYU/export?Format=pdf&format=pdf&size=7&portrait=true&gid=1994651098&gridlines=false" role="button">Download</a>
+      <a class="btn btn-success btn-download d-none" href="melesat_diusia_muda_dwnld.html" role="button">Link Download</a>
     </div>
     </div>
     </form>
@@ -303,12 +309,12 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script>
-      const scriptURL = "https://script.google.com/macros/s/AKfycbx-CPBRpbWOEA4ZBykStSY-VDNSnS3v7r2UGgP_gUX8118nhqjOaBiSow23-kIBBx6w_Q/exec"
+      const scriptURL = "https://script.google.com/macros/s/AKfycbx-CPBRpbWOEA4ZBykStSY-VDNSnS3v7r2UGgP_gUX8118nhqjOaBiSow23-kIBBx6w_Q/exec";
       const form = document.forms['melesat-diusia-muda'];
       const btnKirim = document.querySelector(".btn-kirim");
       const btnLoading = document.querySelector(".btn-loading");
       const btnDownload = document.querySelector(".btn-download");
-      // const myAlert = document.querySelector(".my-alert");
+      const myAlert = document.querySelector(".my-alert");
     
       form.addEventListener('submit', (e) => {
         e.preventDefault();
@@ -322,7 +328,7 @@
             btnLoading.classList.toggle("d-none");
             btnDownload.classList.toggle("d-none");
             // tampilkan alert
-            // myAlert.classList.toggle("d-none");
+            myAlert.classList.toggle("d-none");
             // reset form
             form.reset();
              console.log('Success!', response);
