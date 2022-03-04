@@ -29,6 +29,15 @@
               <label for="nomor" class="form-label"></label>
               <input type="text" maxlength="12" class="form-control" placeholder="Nomor NF [xxx-xx-xxxxx]" id="nomor" aria-describedby="nomor" name="nomor" required />
             </div>
+            <div class="input-group mb-3">
+              <input type="password" class="form-control" id="myInput" placeholder="Password" pattern="nfsiswa" name="password" required />
+              <button class="btn btn-outline-secondary" type="button">
+                <span onclick="myFunction()">
+                  <i id="hide1" class="bi bi-eye" style="display: none"></i>
+                  <i id="hide2" class="bi bi-eye-slash"></i>
+                </span>
+              </button>
+            </div>
             <div class="text-center">
               <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
               <button class="btn btn-primary btn-loading d-none" type="button" disabled>
