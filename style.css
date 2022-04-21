@@ -55,3 +55,7 @@ section {
   border: 1px solid #0062ff;
   padding: 20px;
 }
+
+#hide {
+  background-color: #002d70;
+}

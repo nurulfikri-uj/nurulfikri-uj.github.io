@@ -446,6 +446,15 @@
               <!-- <option value="SMAN 18 Jakarta">SMAN 18 Jakarta</option> -->
             </select>
           </div>
+          <div class="input-group mb-3">
+            <input type="password" class="form-control" id="myInput" placeholder="Password" pattern="yasporbinf" name="password" required />
+            <button class="btn btn-outline-secondary" id="hide" type="button">
+              <span onclick="myFunction()">
+                <i id="hide1" class="bi bi-eye" style="display: none"></i>
+                <i id="hide2" class="bi bi-eye-slash"></i>
+              </span>
+            </button>
+          </div>
           <div class="mb-3">
             <select class="form-select" aria-label="Default select example" name="kelompok">
               <option selected>Pilih kelompok ujian..</option>
@@ -464,6 +473,9 @@
               <option value="3">TO 1 Semester 2</option>
               <option value="4">TO 2 Semester 2</option>
               <option value="5">TO 3 Semester 2</option>
+              <option value="6">TO 4 Semester 2</option>
+              <option value="7">TO 5 Semester 2</option>
+              <option value="8">TO 6 Semester 2</option>
             </select>
           </div>
           
@@ -548,6 +560,23 @@
           })
           .catch(error => console.error('Error!', error.message))
       })
+    </script>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myInput");
+        var y = document.getElementById("hide1");
+        var z = document.getElementById("hide2");
+
+        if (x.type === "password") {
+          x.type = "text";
+          y.style.display = "block";
+          z.style.display = "none";
+        } else {
+          x.type = "password";
+          y.style.display = "none";
+          z.style.display = "block";
+        }
+      }
     </script>
   </body>
 </html>
