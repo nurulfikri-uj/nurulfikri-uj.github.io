@@ -59,3 +59,27 @@ section {
 #hide {
   background-color: #002d70;
 }
+
+#kuisioner {
+  background-color: rgba(243, 106, 62, 1);
+  opacity: 0.9;
+  border-radius: 1rem;
+}
+
+#biodata {
+  background-image: url("img/edu.svg");
+}
+
+#resume {
+  background-color: rgb(62, 243, 131);
+  opacity: 0.9;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+#resume1 {
+  background-color: rgb(62, 243, 131);
+  opacity: 0.9;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}

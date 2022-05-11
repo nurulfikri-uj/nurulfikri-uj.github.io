@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="style.css" />
 
     <title>Kuisioner | Belajar itu Selezat Cokelat</title>
+    <link rel="shortcut icon" href="img/logo bip.png">
   </head>
   <body>
     <!-- Navbar -->
@@ -37,33 +38,33 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <div class="alert alert-warning alert-dismissible fade show d-none my-alert" role="alert">
-              <strong>Jawaban kamu sudah terkirim, silahkan minum teh sambil menunggu hasilnya dikirim ke email kamu ya! </strong>
+            <div class="alert alert-danger alert-dismissible fade show d-none my-alert" role="alert">
+              <strong>Alhamdulillah, hasilnya silahkan ditanyakan kepada kakak BIP nya ya.</strong>
               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
-            <h2>Biodata</h2>
+            <h2 class="card bg-success text-white text-center">Biodata</h2>
           </div>
         </div>
         <div class="row">
           <div class="col-md-4">
             <form name="belajar-selezat-cokelat">
-              <div class="mb-3">
+              <div>
                 <label for="name" class="form-label"></label>
-                <input style="text-transform: uppercase;" type="text" class="form-control" placeholder="Nama Lengkap" id="name" aria-describedby="name" name="nama" required />
+                <input style="text-transform: uppercase;" type="text" class="form-control" placeholder="Nama Lengkap" id="name" aria-describedby="name" name="nama" autofocus required />
               </div>
-              <div class="mb-3">
+              <div>
                 <label for="nomor" class="form-label"></label>
                 <input type="text" maxlength="12" class="form-control" placeholder="Nomor NF [xxx-xx-xxxxx]" id="nomor" aria-describedby="nomor" name="nomor" required />
               </div>
-              <div class="mb-3">
+              <div>
                 <label for="class" class="form-label"></label>
                 <input style="text-transform: uppercase;" type="text" maxlength="2" class="form-control" placeholder="Kelas [misal: P1]" id="class" aria-describedby="class" name="kelas" required />
               </div>
-              <div class="mb-3">
+              <div>
                 <label for="location" class="form-label"></label>
                 <input type="text" maxlength="3" class="form-control" placeholder="Kode Lokasi [misal: 102]" id="location" aria-describedby="location" name="lokasi" required />
               </div>
-              <div class="mb-3">
+              <div>
                 <label for="email" class="form-label"></label>
                 <input type="email" class="form-control" placeholder="Email Siswa" id="email" aria-describedby="email" name="email" required />
               </div>
@@ -74,9 +75,9 @@
     <!-- Kuisioner -->
     <div class="row">
       <div class="col">
-              <h2 class="text-center">Kuisioner : Belajar itu Selezat Cokelat</h2>
-              <div class="mb-3">
-                <p>1. Saya baru akan belajar dirumah jika akan ulangan dan mengerjakan PR</p>
+              <h2 class="card bg-warning text-center my-4">Kuisioner : Belajar itu Selezat Cokelat</h2>
+              <div class="mb-3 card">
+                <p class="card-header">1. Saya baru akan belajar dirumah jika akan ulangan dan mengerjakan PR</p>
                 <div class="form-check form-check-inline" >
                   <input class="form-check-input" type="radio" name="1" id="inlineRadio1" value="0" required/>
                   <label class="form-check-label" for="inlineRadio1">Ya</label>
@@ -86,8 +87,8 @@
                   <label class="form-check-label" for="inlineRadio2">Tidak</label>
                 </div>
               </div>
-              <div class="mb-3">
-                <p>2. Saya selalu bersemangat jika akan berangkat ke sekolah</p>
+              <div class="mb-3 card">
+                <p class="card-header">2. Saya selalu bersemangat jika akan berangkat ke sekolah</p>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="2" id="inlineRadio1" value="1" required />
                   <label class="form-check-label" for="inlineRadio1">Ya</label>
@@ -97,8 +98,8 @@
                   <label class="form-check-label" for="inlineRadio2">Tidak</label>
                 </div>
               </div>
-              <div class="mb-3">
-                <p>3. Saya kurang antusias dengan pelajaran yang gurunya membosankan dalam mengajar</p>
+              <div class="mb-3 card">
+                <p class="card-header">3. Saya kurang antusias dengan pelajaran yang gurunya membosankan dalam mengajar</p>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="3" id="inlineRadio1" value="0" required />
                   <label class="form-check-label" for="inlineRadio1">Ya</label>
@@ -108,8 +109,8 @@
                   <label class="form-check-label" for="inlineRadio2">Tidak</label>
                 </div>
               </div>
-              <div class="mb-3">
-                <p>4. Saya selalu antusias dan berusaha mencoba dengan semua mata pelajaran</p>
+              <div class="mb-3 card">
+                <p class="card-header">4. Saya selalu antusias dan berusaha mencoba dengan semua mata pelajaran</p>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="4" id="inlineRadio1" value="1" required />
                   <label class="form-check-label" for="inlineRadio1">Ya</label>
@@ -119,8 +120,8 @@
                   <label class="form-check-label" for="inlineRadio2">Tidak</label>
                 </div>
               </div>
-              <div class="mb-3">
-                <p>5. Saya merasa tenang jika teman-teman mendapatkan nilai rendah sama seperti nilai yang saya peroleh</p>
+              <div class="mb-3 card">
+                <p class="card-header">5. Saya merasa tenang jika teman-teman mendapatkan nilai rendah sama seperti nilai yang saya peroleh</p>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="5" id="inlineRadio1" value="0" required />
                   <label class="form-check-label" for="inlineRadio1">Ya</label>
@@ -130,8 +131,8 @@
                   <label class="form-check-label" for="inlineRadio2">Tidak</label>
                 </div>
               </div>
-              <div class="mb-3">
-                <p>6. Saya selalu mencoba latihan soal-soal yang menantang walau tidak disuruh</p>
+              <div class="mb-3 card">
+                <p class="card-header">6. Saya selalu mencoba latihan soal-soal yang menantang walau tidak disuruh</p>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="6" id="inlineRadio1" value="1" required />
                   <label class="form-check-label" for="inlineRadio1">Ya</label>
@@ -141,8 +142,8 @@
                   <label class="form-check-label" for="inlineRadio2">Tidak</label>
                 </div>
               </div>
-              <div class="mb-3">
-                <p>7. Saya selalu pusing dan bosan melihat buku-buku pelajaran terutama pelajaran eksak</p>
+              <div class="mb-3 card">
+                <p class="card-header">7. Saya selalu pusing dan bosan melihat buku-buku pelajaran terutama pelajaran eksak</p>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="7" id="inlineRadio1" value="0" required />
                   <label class="form-check-label" for="inlineRadio1">Ya</label>
@@ -152,8 +153,8 @@
                   <label class="form-check-label" for="inlineRadio2">Tidak</label>
                 </div>
               </div>
-              <div class="mb-3">
-                <p>8. Saya sudah membuat/ memiliki jadwal khusus untuk belajar setiap malam</p>
+              <div class="mb-3 card">
+                <p class="card-header">8. Saya sudah membuat/ memiliki jadwal khusus untuk belajar setiap malam</p>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="8" id="inlineRadio1" value="1" required />
                   <label class="form-check-label" for="inlineRadio1">Ya</label>
@@ -163,8 +164,8 @@
                   <label class="form-check-label" for="inlineRadio2">Tidak</label>
                 </div>
               </div>
-              <div class="mb-3">
-                <p>9. Saya selalu menunda-nunda untuk mulai belajar sampai akhirnya tidak jadi belajar</p>
+              <div class="mb-3 card">
+                <p class="card-header">9. Saya selalu menunda-nunda untuk mulai belajar sampai akhirnya tidak jadi belajar</p>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="9" id="inlineRadio1" value="0" required />
                   <label class="form-check-label" for="inlineRadio1">Ya</label>
@@ -174,8 +175,8 @@
                   <label class="form-check-label" for="inlineRadio2">Tidak</label>
                 </div>
               </div>
-              <div class="mb-3">
-                <p>10. Saya selalu bersemangat belajar karena saya tahu manfaatnya untuk diri saya dimasa depan</p>
+              <div class="mb-3 card">
+                <p class="card-header">10. Saya selalu bersemangat belajar karena saya tahu manfaatnya untuk diri saya dimasa depan</p>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="10" id="inlineRadio1" value="1" required />
                   <label class="form-check-label" for="inlineRadio1">Ya</label>
@@ -185,8 +186,8 @@
                   <label class="form-check-label" for="inlineRadio2">Tidak</label>
                 </div>
               </div>
-              <div class="mb-3">
-                <p>11. Saya senang jika guru tidak hadir</p>
+              <div class="mb-3 card">
+                <p class="card-header">11. Saya senang jika guru tidak hadir</p>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="11" id="inlineRadio1" value="0" required />
                   <label class="form-check-label" for="inlineRadio1">Ya</label>
@@ -196,8 +197,8 @@
                   <label class="form-check-label" for="inlineRadio2">Tidak</label>
                 </div>
               </div>
-              <div class="mb-3">
-                <p>12. Saya senang jika berkumpul dengan teman-teman untuk diskusi pelajaran</p>
+              <div class="mb-3 card">
+                <p class="card-header">12. Saya senang jika berkumpul dengan teman-teman untuk diskusi pelajaran</p>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="12" id="inlineRadio1" value="1" required />
                   <label class="form-check-label" for="inlineRadio1">Ya</label>
@@ -207,8 +208,8 @@
                   <label class="form-check-label" for="inlineRadio2">Tidak</label>
                 </div>
               </div>
-              <div class="mb-3">
-                <p>13. Saya selalu membicarakan guru “killer” yang membosankan dalam mengajar dengan teman-teman</p>
+              <div class="mb-3 card">
+                <p class="card-header">13. Saya selalu membicarakan guru “killer” yang membosankan dalam mengajar dengan teman-teman</p>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="13" id="inlineRadio1" value="0" required />
                   <label class="form-check-label" for="inlineRadio1">Ya</label>
@@ -218,8 +219,8 @@
                   <label class="form-check-label" for="inlineRadio2">Tidak</label>
                 </div>
               </div>
-              <div class="mb-3">
-                <p>14. Saya sering membantu teman yang kesulitan dalam mata pelajaran tertentu</p>
+              <div class="mb-3 card">
+                <p class="card-header">14. Saya sering membantu teman yang kesulitan dalam mata pelajaran tertentu</p>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="14" id="inlineRadio1" value="1" required />
                   <label class="form-check-label" for="inlineRadio1">Ya</label>
@@ -229,8 +230,8 @@
                   <label class="form-check-label" for="inlineRadio2">Tidak</label>
                 </div>
               </div>
-              <div class="mb-3">
-                <p>15. Nilai saya selalu jelek jika diajar oleh guru “killer” yang kurang enak dalam mengajar</p>
+              <div class="mb-3 card">
+                <p class="card-header">15. Nilai saya selalu jelek jika diajar oleh guru “killer” yang kurang enak dalam mengajar</p>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="15" id="inlineRadio1" value="0" required />
                   <label class="form-check-label" for="inlineRadio1">Ya</label>
@@ -240,8 +241,8 @@
                   <label class="form-check-label" for="inlineRadio2">Tidak</label>
                 </div>
               </div>
-              <div class="mb-3">
-                <p>16. Saya sering mendapat nilai bagus dimata pelajaran yang dianggap teman-teman gurunya “killer”</p>
+              <div class="mb-3 card">
+                <p class="card-header">16. Saya sering mendapat nilai bagus dimata pelajaran yang dianggap teman-teman gurunya “killer”</p>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="16" id="inlineRadio1" value="1" required />
                   <label class="form-check-label" for="inlineRadio1">Ya</label>
@@ -251,8 +252,8 @@
                   <label class="form-check-label" for="inlineRadio2">Tidak</label>
                 </div>
               </div>
-              <div class="mb-3">
-                <p>17. Saya takut jika guru mengadakan ulangan dadakan</p>
+              <div class="mb-3 card">
+                <p class="card-header">17. Saya takut jika guru mengadakan ulangan dadakan</p>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="17" id="inlineRadio1" value="0" required />
                   <label class="form-check-label" for="inlineRadio1">Ya</label>
@@ -262,8 +263,8 @@
                   <label class="form-check-label" for="inlineRadio2">Tidak</label>
                 </div>
               </div>
-              <div class="mb-3">
-                <p>18. Saya sering diandalkan oleh teman-teman untuk menjelaskan ulang pelajaran yang telah di ajarkan oleh guru</p>
+              <div class="mb-3 card">
+                <p class="card-header">18. Saya sering diandalkan oleh teman-teman untuk menjelaskan ulang pelajaran yang telah di ajarkan oleh guru</p>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="18" id="inlineRadio1" value="1" required />
                   <label class="form-check-label" for="inlineRadio1">Ya</label>
@@ -273,8 +274,8 @@
                   <label class="form-check-label" for="inlineRadio2">Tidak</label>
                 </div>
               </div>
-              <div class="mb-3">
-                <p>19. Saya lebih sering mengerjakan PR di sekolah saat akan masuk kelas dengan melihat pekerjaan teman.</p>
+              <div class="mb-3 card">
+                <p class="card-header">19. Saya lebih sering mengerjakan PR di sekolah saat akan masuk kelas dengan melihat pekerjaan teman.</p>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="19" id="inlineRadio1" value="0" required />
                   <label class="form-check-label" for="inlineRadio1">Ya</label>
@@ -284,8 +285,8 @@
                   <label class="form-check-label" for="inlineRadio2">Tidak</label>
                 </div>
               </div>
-              <div class="mb-3">
-                <p>20. Saya sering menghabiskan waktu dengan belajar atau membaca</p>
+              <div class="mb-3 card">
+                <p class="card-header">20. Saya sering menghabiskan waktu dengan belajar atau membaca</p>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="20" id="inlineRadio1" value="1" required />
                   <label class="form-check-label" for="inlineRadio1">Ya</label>
@@ -294,6 +295,10 @@
                   <input class="form-check-input" type="radio" name="20" id="inlineRadio2" value="0" />
                   <label class="form-check-label" for="inlineRadio2">Tidak</label>
                 </div>
+              </div>
+              <div class="alert alert-danger alert-dismissible fade show d-none my-alert my-3" role="alert">
+                <strong>Alhamdulillah, hasilnya silahkan ditanyakan kepada kakak BIP nya ya.</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
               </div>
               <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
               <button class="btn btn-primary btn-loading d-none" type="button" disabled>
