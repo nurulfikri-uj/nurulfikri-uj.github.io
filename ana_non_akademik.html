@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Analisis Nilai Akhir (ANA) Prestasi PPDB 2022</title>
+    <link rel="shortcut icon" href="img/logo bip.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-lines-icons/2.4.1/css/simple-line-icons.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">BIP Nurul Fikri</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html#home">Beranda</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <!-- Biodata -->
+    <section id="biodata">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <!-- <div class="alert alert-danger alert-dismissible fade show d-none my-alert" role="alert">
+              <strong>Alhamdulillah, hasilnya silahkan ditanyakan kepada kakak BIP atau Staf NF nya ya.</strong>
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div> -->
+            <h2 class="card bg-white text-primary text-center">Form Analisis Nilai Akhir Jalur Prestasi Non Akademik - PPDB 2022</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4 bg-info">
+            <form name="ana">
+              <h3 class="text-center mt-3 text-white">Biodata Siswa & Sekolah</h3>
+              <div>
+                <label for="name" class="form-label"></label>
+                <input style="text-transform: uppercase" type="text" class="form-control" placeholder="Nama Lengkap" onkeyup="lettersOnly(this)" id="name" aria-describedby="name" name="nama" autofocus required />
+              </div>
+              <div>
+                <label for="nomor" class="form-label"></label>
+                <input type="text" maxlength="12" class="form-control" placeholder="Nomor NF [123-45-67890]" id="nomor" aria-describedby="nomor" name="nomor" required />
+              </div>
+              <div>
+                <label for="location" class="form-label"></label>
+                <input type="text" maxlength="3" class="form-control" placeholder="Kode Lokasi [misal: 102]" id="location" aria-describedby="location" name="lokasi" required />
+              </div>
+              <div>
+                <label for="class" class="form-label"></label>
+                <input style="text-transform: uppercase" type="text" maxlength="2" class="form-control" placeholder="Kelas [misal: E1 / P1]" id="class" aria-describedby="class" name="kelas" required />
+              </div>
+              <div>
+                <label for="email" class="form-label"></label>
+                <input type="email" class="form-control" placeholder="Email Siswa" id="email" aria-describedby="email" name="email" required />
+              </div>
+              <div>
+                <label for="rata_rapot" class="form-label"></label>
+                <input type="text" class="form-control" placeholder="Rata Rapot (Gunakan Koma)" id="rata_rapot" aria-describedby="rata_rapot" name="rata_rapot" required />
+              </div>
+              <div>
+                <label for="peringkat_akademik" class="form-label"></label>
+                <input type="number" class="form-control" placeholder="Peringkat Akademik" id="peringkat_akademik" aria-describedby="peringkat_akademik" name="peringkat_akademik" required />
+              </div>
+              <div>
+                <label for="peringkat_non_akademik" class="form-label"></label>
+                <input type="number" class="form-control" placeholder="Peringkat Non Akademik" id="peringkat_non_akademik" aria-describedby="peringkat_non_akademik" name="peringkat_non_akademik" required />
+              </div>
+              <div>
+                <label for="jmlh_siswa" class="form-label"></label>
+                <input type="number" class="form-control" placeholder="Jumlah Siswa 1 Angkatan Kelas 6 atau 9" id="jmlh_siswa" aria-describedby="jmlh_siswa" name="jmlh_siswa" required />
+              </div>
+              <div class="mt-4">
+                <select class="form-select" aria-label="Default select example" name="akre" required>
+                  <option selected>Akreditasi Sekolah</option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                </select>
+              </div>
+              <a href="https://bansm.kemdikbud.go.id/akreditasi" class="btn btn-warning btn-sm mb-3" target="_blank">Cek Akreditasi</a>
+
+              <h3 class="text-center text-white mt-3">Prestasi Akademik</h3>
+              <div class="mt-4">
+                <select class="form-select" aria-label="Default select example" name="akademik_tingkat" required>
+                  <option selected>Tingkat Perlombaan Akademik</option>
+                  <option value="Tidak">Tidak</option>
+                  <option value="Internasional">Internasional</option>
+                  <option value="Nasional">Nasional</option>
+                  <option value="Provinsi">Provinsi</option>
+                  <option value="Kota/Kab">Kota/Kab</option>
+                </select>
+              </div>
+              <div class="mt-4">
+                <select class="form-select" aria-label="Default select example" name="akademik_juara" required>
+                  <option selected>Juara ke..</option>
+                  <option value="Tidak">Tidak</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+              <div class="mt-4">
+                <select class="form-select" aria-label="Default select example" name="akademik_jenis_1" required>
+                  <option selected>Kedinasan / Induk Organisasi</option>
+                  <option value="Tidak">Tidak</option>
+                  <option value="Kedinasan">Kedinasan</option>
+                  <option value="Induk Organisasi">Induk Organisasi</option>
+                </select>
+              </div>
+              <div class="mt-4">
+                <select class="form-select" aria-label="Default select example" name="akademik_jenis_2" required>
+                  <option selected>Berjenjang / Tidak Berjenjang</option>
+                  <option value="Tidak">Tidak</option>
+                  <option value="Berjenjang">Berjenjang</option>
+                  <option value="Tidak Berjenjang">Tidak Berjenjang</option>
+                </select>
+              </div>
+              <div class="mt-4 mb-3">
+                <select class="form-select" aria-label="Default select example" name="akademik_jenis_3" required>
+                  <option selected>Perorangan / Beregu</option>
+                  <option value="Tidak">Tidak</option>
+                  <option value="Perorangan">Perorangan</option>
+                  <option value="Beregu">Beregu</option>
+                </select>
+              </div>
+
+              <h3 class="text-center mt-3 text-white">Prestasi Non Akademik</h3>
+              <div class="mt-4">
+                <select class="form-select" aria-label="Default select example" name="non_akademik_tingkat" required>
+                  <option selected>Tingkat Perlombaan Non Akademik</option>
+                  <option value="Tidak">Tidak</option>
+                  <option value="Internasional">Internasional</option>
+                  <option value="Nasional">Nasional</option>
+                  <option value="Provinsi">Provinsi</option>
+                  <option value="Kota/Kab">Kota/Kab</option>
+                </select>
+              </div>
+              <div class="mt-4">
+                <select class="form-select" aria-label="Default select example" name="non_akademik_juara" required>
+                  <option selected>Juara ke..</option>
+                  <option value="Tidak">Tidak</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+              <div class="mt-4">
+                <select class="form-select" aria-label="Default select example" name="non_akademik_jenis_1" required>
+                  <option selected>Kedinasan / Induk Organisasi</option>
+                  <option value="Tidak">Tidak</option>
+                  <option value="Kedinasan">Kedinasan</option>
+                  <option value="Induk Organisasi">Induk Organisasi</option>
+                </select>
+              </div>
+              <div class="mt-4">
+                <select class="form-select" aria-label="Default select example" name="non_akademik_jenis_2" required>
+                  <option selected>Berjenjang / Tidak Berjenjang</option>
+                  <option value="Tidak">Tidak</option>
+                  <option value="Berjenjang">Berjenjang</option>
+                  <option value="Tidak Berjenjang">Tidak Berjenjang</option>
+                </select>
+              </div>
+              <div class="mt-4">
+                <select class="form-select" aria-label="Default select example" name="non_akademik_jenis_3" required>
+                  <option selected>Perorangan / Beregu</option>
+                  <option value="Tidak">Tidak</option>
+                  <option value="Perorangan">Perorangan</option>
+                  <option value="Beregu">Beregu</option>
+                </select>
+              </div>
+              <div class="mt-4">
+                <select class="form-select" aria-label="Default select example" name="jabatan_org" required>
+                  <option selected>Jabatan OSIS/MPK</option>
+                  <option value="Tidak">Tidak</option>
+                  <option value="Ketua">Ketua</option>
+                  <option value="Pengurus">Pengurus</option>
+                  <option value="Anggota Pengurus">Anggota Pengurus</option>
+                </select>
+              </div>
+              <div class="mt-4">
+                <select class="form-select" aria-label="Default select example" name="jabatan_ekskul" required>
+                  <option selected>Jabatan Ekstrakurikuler</option>
+                  <option value="Tidak">Tidak</option>
+                  <option value="Ketua">Ketua</option>
+                  <option value="Pengurus">Pengurus</option>
+                  <option value="Anggota Pengurus">Anggota Pengurus</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-warning mt-4 btn-kirim">Kirim</button>
+              <button class="btn btn-warning btn-loading mt-4 d-none" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Akhir Biodata -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbwKVrYNgSYssGVJQd9Z4Gln8L1Zk4jgUuSYQHpfr7sNrC4mhCqOCz1SNwOXBTtSXpdh/exec";
+      const form = document.forms["ana"];
+      const btnKirim = document.querySelector(".btn-kirim");
+      const btnLoading = document.querySelector(".btn-loading");
+      // const btnDownload = document.querySelector(".btn-download");
+      const myAlert = document.querySelector(".my-alert");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        // ketika tombol submit diklik
+        // tampilkan tombol loading, hilangkan tombol kirim
+        btnLoading.classList.toggle("d-none");
+        btnKirim.classList.toggle("d-none");
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            // tampilkan tombol kirim, hilangkan tombol loading
+            btnLoading.classList.toggle("d-none");
+            btnKirim.classList.toggle("d-none");
+            // tampilkan alert
+            //   myAlert.classList.toggle("d-none");
+            swal({
+              title: "Jawaban Berhasil Dikirim!",
+              icon: "success",
+              button: "Alhamdulillah",
+            });
+            // reset form
+            form.reset();
+            console.log("Success!", response);
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

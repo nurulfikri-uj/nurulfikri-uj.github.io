@@ -1,9 +1,9 @@
 $(document).ready(function () {
   $("#nomor").mask("000-00-00000");
+  $("#rata_rapot").mask("00,00");
   $("#location").mask("000");
   $("#classD").mask("D0");
   $("#classP").mask("P0");
-  $(".classU").mask("U0");
   $("#classR").mask("R0");
   $("#classT").mask("T0");
   $("#classQ").mask("Q0");
