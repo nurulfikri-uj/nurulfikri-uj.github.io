@@ -59,21 +59,37 @@
                 <label for="nomor" class="form-label"></label>
                 <input type="text" maxlength="12" class="form-control" placeholder="Nomor NF [123-45-67890]" id="nomor" aria-describedby="nomor" name="nomor" required />
               </div>
-              <div>
-                <label for="location" class="form-label"></label>
-                <input type="text" maxlength="3" class="form-control" placeholder="Kode Lokasi [misal: 102]" id="location" aria-describedby="location" name="lokasi" required />
+              <div class="mt-4">
+                <select class="form-select" aria-label="Default select example" name="lokasi" required>
+                  <option selected>Lokasi Belajar NF</option>
+                  <option value="102-Cempaka Putih">102-Cempaka Putih</option>
+                  <option value="113-Rawa Badak">113-Rawa Badak</option>
+                  <option value="115-Rawamangun">115-Rawamangun</option>
+                  <option value="117-Kampung Melayu">117-Kampung Melayu</option>
+                  <option value="157-Kramat Jaya">102-Cempaka Putih</option>
+                  <option value="173-Salemba">173-Salemba</option>
+                  <option value="175-Kramat Asem">175-Kramat Asem</option>
+                  <option value="176-Pangkalan Asem">176-Pangkalan Asem</option>
+                  <option value="194-Kemayoran">194-Kemayoran</option>
+                  <option value="200-Pulomas">200-Pulomas</option>
+                  <option value="201-Sunter Jaya">201-Sunter Jaya</option>
+                  <option value="203-Kebon Bawang">203-Kebon Bawang</option>
+                </select>
               </div>
-              <div>
-                <label for="class" class="form-label"></label>
-                <input style="text-transform: uppercase" type="text" maxlength="2" class="form-control" placeholder="Kelas [misal: E1 / P1]" id="class" aria-describedby="class" name="kelas" required />
+              <div class="mt-4">
+                <select class="form-select" aria-label="Default select example" name="kelas" required>
+                  <option selected>Kelas</option>
+                  <option value="6 SD">6 SD</option>
+                  <option value="9 SMP">9 SMP</option>
+                </select>
               </div>
               <div>
                 <label for="email" class="form-label"></label>
-                <input type="email" class="form-control" placeholder="Email Siswa" id="email" aria-describedby="email" name="email" required />
+                <input type="email" class="form-control" placeholder="Email" id="email" aria-describedby="email" name="email" required />
               </div>
               <div>
                 <label for="rata_rapot" class="form-label"></label>
-                <input type="text" class="form-control" placeholder="Rata Rapot (Gunakan Koma)" id="rata_rapot" aria-describedby="rata_rapot" name="rata_rapot" required />
+                <input type="text" class="form-control" placeholder="Rerata Nilai Rapot (Gunakan Koma)" id="rata_rapot" aria-describedby="rata_rapot" name="rata_rapot" required />
               </div>
               <div>
                 <label for="peringkat_akademik" class="form-label"></label>
@@ -210,6 +226,63 @@
                 Loading...
               </button>
             </form>
+          </div>
+          <div class="col md-6 bg-warning">
+            <h2 class="mt-2 text-dark">Keterangan</h2>
+            <a href="https://drive.google.com/file/d/1BNV81ExVMNnnbN6BaGDRsm-5kTHFSlG9/view?usp=sharing">Sumber: SK KADIS NO 466 TAHUN 2021 TENTANG ALUR PROSES PPDB TAHUN PELAJARAN 2021-2022</a>
+            <h5 class="mt-3">Rerata Nilai Rapor</h5>
+            <ul>
+              <b>Untuk PPDB SMP</b
+              >, rerata nilai rapor yang sudah divalidasi yaitu rerata nilai rapor kelas 4, kelas 5 dan kelas 6 semester 1 SD/MI/Paket A
+              <b>(5 semester)</b>
+              pada mata pelajaran:
+              <li>Pendidikan Kewarganegaraan (PKn)</li>
+              <li>Bahasa Indonesia</li>
+              <li>Matematika</li>
+              <li>Ilmu Pengetahuan Alam</li>
+              <br />
+              <b>Untuk PPDB SMA</b
+              >, rerata nilai rapor yang sudah divalidasi yaitu rerata nilai rapor kelas 7, kelas 8 dan kelas 9 semester 1 SMP/MTs/Paket B
+              <b>(5 semester)</b>
+              pada mata pelajaran:
+              <li>Pendidikan Kewarganegaraan (PKn)</li>
+              <li>Bahasa Indonesia</li>
+              <li>Matematika</li>
+              <li>Ilmu Pengetahuan Alam (IPA)</li>
+              <li>Ilmu Pengetahuan Sosial (IPS)</li>
+              <li>Bahasa Inggris</li>
+            </ul>
+            <h5 class="mt-3">Peringkat Paralel Siswa</h5>
+            <ul>
+              Peringkat rerata nilai rapor seangkatan kelas 6/ kelas 9
+              <b>(ditanyakan ke sekolah)</b
+              >.
+            </ul>
+            <h5 class="mt-3">Peringkat Non Akademik</h5>
+            <ul>
+              Peringkat rerata nilai non-akademik seangkatan kelas 6/ kelas 9
+              <b>(ditanyakan ke sekolah)</b
+              >.
+            </ul>
+            <h5 class="mt-3">Jumlah Siswa</h5>
+            <ul>
+              Jumlah siswa seangkatan kelas 6/ kelas 9
+              <b>(ditanyakan ke sekolah)</b
+              >.
+            </ul>
+            <h2 class="mt-5 text-dark">Keterangan Tambahan</h2>
+            <ul>
+              CPDB (Calon Peserta Didik Baru) menyertakan sertifikat yang dimiliki dari prestasi kejuaraan/perlombaan yang diselenggarakan di bidang:
+              <li>Olahraga</li>
+              <li>Seni</li>
+              <li>Budaya</li>
+              <li>Keagamaan</li>
+              <li>Sains dan Teknologi</li>
+              <li>Pramuka</li>
+              <li>PMR</li>
+              <li>Paskibra</li>
+              yang diselenggarakan oleh instansi kedinasan dan/atau Induk Organisasi yang resmi.
+            </ul>
           </div>
         </div>
       </div>
