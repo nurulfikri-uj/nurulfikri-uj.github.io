@@ -58,36 +58,55 @@
                 </div>
                 <div>
                   <label for="nomor" class="form-label"></label>
-                  <input type="text" maxlength="12" class="form-control" placeholder="Nomor NF [123-45-67890]" id="nomor" aria-describedby="nomor" name="nomor" required />
+                  <input type="text" maxlength="15" class="form-control" placeholder="Nomor HP Orang Tua" id="nomor" aria-describedby="nomor" name="nomor" required />
                 </div>
                 <div class="mt-4">
                   <select class="form-select" aria-label="Default select example" name="lokasi" required>
-                    <option selected>Lokasi Belajar NF</option>
-                    <option value="101-Taman Margasatwa">101-Taman Margasatwa</option>
-                    <option value="102-Cempaka Putih">102-Cempaka Putih</option>
-                    <option value="103-Pangkalan Jati">103-Pangkalan Jati</option>
-                    <option value="107-Mampang">107-Mampang</option>
-                    <option value="108-Palmerah">108-Palmerah</option>
-                    <option value="109-Pasar Minggu">109-Pasar Minggu</option>
-                    <option value="110-Bintaro">110-Bintaro</option>
-                    <option value="118-Akses UI">118-Akses UI</option>
-                    <option value="113-Rawa Badak">113-Rawa Badak</option>
-                    <option value="115-Rawamangun">115-Rawamangun</option>
-                    <option value="117-Kampung Melayu">117-Kampung Melayu</option>
-                    <option value="128-Petukangan">128-Petukangan</option>
-                    <option value="157-Kramat Jaya">102-Cempaka Putih</option>
-                    <option value="160-Ciganjur">160-Ciganjur</option>
-                    <option value="173-Salemba">173-Salemba</option>
-                    <option value="175-Kramat Asem">175-Kramat Asem</option>
-                    <option value="176-Pangkalan Asem">176-Pangkalan Asem</option>
-                    <option value="194-Kemayoran">194-Kemayoran</option>
-                    <option value="200-Pulomas">200-Pulomas</option>
-                    <option value="201-Sunter Jaya">201-Sunter Jaya</option>
-                    <option value="203-Kebon Bawang">203-Kebon Bawang</option>
-                    <option value="216-Radio Dalam">216-Radio Dalam</option>
-                    <option value="217-Kalibata">217-Kalibata</option>
-                    <option value="218-Jagakarsa">218-Jagakarsa</option>
-                    <option value="219-Tebet">219-Tebet</option>
+                    <option selected>Kelurahan Tempat Tinggal</option>
+                    <option value="Bendungan Hilir">Bendungan Hilir</option>
+                    <option value="Bungur">Bungur</option>
+                    <option value="Cempaka Baru">Cempaka Baru</option>
+                    <option value="Cempaka Putih Barat">Cempaka Putih Barat</option>
+                    <option value="Cempaka Putih Timur">Cempaka Putih Timur</option>
+                    <option value="Cideng">Cideng</option>
+                    <option value="Cikini">Cikini</option>
+                    <option value="Duri Pulo">Duri Pulo</option>
+                    <option value="Galur">Galur</option>
+                    <option value="Gambir">Gambir</option>
+                    <option value="Gelora">Gelora</option>
+                    <option value="Gondangdia">Gondangdia</option>
+                    <option value="Gunung Sahari Selatan">Gunung Sahari Selatan</option>
+                    <option value="Gunung Sahari Utara">Gunung Sahari Utara</option>
+                    <option value="Harapan Mulya">Harapan Mulya</option>
+                    <option value="Johar Baru">Johar Baru</option>
+                    <option value="Kampung Bali">Kampung Bali</option>
+                    <option value="Kampung Rawa">Kampung Rawa</option>
+                    <option value="Karang Anyar">Karang Anyar</option>
+                    <option value="Karet Tengsin">Karet Tengsin</option>
+                    <option value="Kartini">Kartini</option>
+                    <option value="Kebon Kacang">Kebon Kacang</option>
+                    <option value="Kebon Kelapa">Kebon Kelapa</option>
+                    <option value="Kebon Kosong">Kebon Kosong</option>
+                    <option value="Kebon Melati">Kebon Melati</option>
+                    <option value="Kebon Sirih">Kebon Sirih</option>
+                    <option value="Kemayoran">Kemayoran</option>
+                    <option value="Kenari">Kenari</option>
+                    <option value="Kramat">Kramat</option>
+                    <option value="Kwitang">Kwitang</option>
+                    <option value="Mangga Dua Selatan">Mangga Dua Selatan</option>
+                    <option value="Menteng">Menteng</option>
+                    <option value="Pasar Baru">Pasar Baru</option>
+                    <option value="Paseban">Paseban</option>
+                    <option value="Pegangsaan">Pegangsaan</option>
+                    <option value="Petamburan">Petamburan</option>
+                    <option value="Petojo Selatan">Petojo Selatan</option>
+                    <option value="Petojo Utara">Petojo Utara</option>
+                    <option value="Rawasari">Rawasari</option>
+                    <option value="Senen">Senen</option>
+                    <option value="Serdang">Serdang</option>
+                    <option value="Sumur Batu">Sumur Batu</option>
+                    <option value="Tanah Tinggi">Tanah Tinggi</option>
+                    <option value="Utan Panjang">Utan Panjang</option>
                   </select>
                 </div>
                 <div class="mt-4">
@@ -96,6 +115,17 @@
                     <option value="6 SD">6 SD</option>
                     <option value="9 SMP">9 SMP</option>
                   </select>
+                </div>
+                <div class="card mt-4">
+                  <p class="card-header">Apakah Kamu Siswa NF?</p>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="siswa_nf" id="inlineRadio1" value="Ya" required />
+                    <label class="form-check-label" for="inlineRadio1">Ya</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="siswa_nf" id="inlineRadio2" value="Tidak" />
+                    <label class="form-check-label" for="inlineRadio2">Tidak</label>
+                  </div>
                 </div>
                 <div>
                   <label for="email" class="form-label"></label>
