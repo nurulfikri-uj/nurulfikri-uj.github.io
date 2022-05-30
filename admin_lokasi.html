@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" />
+
+    <title>Login Admin Anapres</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-around">
+        <div class="col-md-4 text-center">
+          <form name="login-anapres">
+            <img src="img/logo.png" class="img-fluid" alt="logo nf" />
+            <h4>Login Admin Sebaran Sekolah</h4>
+            <h4>Area Khusus Admin</h4>
+            <div class="input-group mb-3">
+              <input type="password" class="form-control" id="myInput" placeholder="Password" pattern="nfuj" name="password" required />
+              <button class="btn btn-outline-secondary" type="button">
+                <span onclick="myFunction()">
+                  <i id="hide1" class="bi bi-eye" style="display: none"></i>
+                  <i id="hide2" class="bi bi-eye-slash"></i>
+                </span>
+              </button>
+            </div>
+            <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
+            <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+              <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+              Loading...
+            </button>
+            <a class="btn btn-primary btn-download1 d-none" href="https://script.google.com/macros/s/AKfycbyNkMgjnripSrZg5KPB6Dfg6XnoLU_PdrTEJiTff-IH322Enl6jgldgZichDYYg2FUB/exec" role="button">Database Sekolah</a>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbyznA3ggSIMZS38K0MBcGte2nd7fM5SmSdtcB-xEAz_ery8sSdcbfnajKxzcVkgsWUgOA/exec";
+      const form = document.forms["login-anapres"];
+      const btnKirim = document.querySelector(".btn-kirim");
+      const btnLoading = document.querySelector(".btn-loading");
+      const btnDownload1 = document.querySelector(".btn-download1");
+      // const myAlert = document.querySelector(".my-alert");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        // ketika tombol submit diklik
+        // tampilkan tombol loading, hilangkan tombol kirim
+        btnLoading.classList.toggle("d-none");
+        btnKirim.classList.toggle("d-none");
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            // tampilkan tombol download, hilangkan tombol loading
+            btnLoading.classList.toggle("d-none");
+            btnDownload1.classList.toggle("d-none");
+            btnDownload2.classList.toggle("d-none");
+            // tampilkan alert
+            // myAlert.classList.toggle("d-none");
+            // reset form
+            form.reset();
+            console.log("Success!", response);
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myInput");
+        var y = document.getElementById("hide1");
+        var z = document.getElementById("hide2");
+
+        if (x.type === "password") {
+          x.type = "text";
+          y.style.display = "block";
+          z.style.display = "none";
+        } else {
+          x.type = "password";
+          y.style.display = "none";
+          z.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>
